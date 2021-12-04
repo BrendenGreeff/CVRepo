@@ -27,7 +27,7 @@ body{
     background: #fcf2e8;
     padding-left: 30rem;
 }
-
+/*//////////////////////////////////////////////////////////////////////*/
 /* Css done for header (Nav bar) */
 header{
     position: fixed;
@@ -95,7 +95,7 @@ header .sites a:hover{
 
 
 }
-
+/*//////////////////////////////////////////////////////////////////////*/
 /* Css done for custom cursors*/
 .cursor-1{
     position: absolute;
@@ -133,7 +133,7 @@ header .sites a:hover{
 .cursor-2.active{
     display: none;
 }
-
+/*//////////////////////////////////////////////////////////////////////*/
 /*Css done for home page (section)*/
 section{
     padding: 1rem 5%;
@@ -144,19 +144,56 @@ section{
 .home{
     display: flex;
     align-items: center;
-    
+    flex-wrap: wrap;
     gap: 1.5rem;
 }
 
 .home .homePageContent{
     flex:1 1 40rem;
 }
-/*
-.home .profileImg{
-    flex: 1 1 40rem;
+
+.home .homePageContent .Introduction{
+    font-size: 3rem;
+    color: black;
+    align-items: center;
+}
+
+.home .homePageContent h1{
+    font-size: 3rem;
+    color: black;
+    text-transform: none;
+}
+
+.home .homePageContent h1 span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.home .homePageContent .currentInfo{
+    font-size: 1.8rem;
+    color: black;
+    padding: 0.5rem 0;
+    text-transform: none;
+}
+
+.home .homePageContent .selfIntroText{
+    font-size: 1.8rem;
+    color: black;
+    padding: 0.5rem 0;
+    text-transform: none;
+}
+
+.home .btn{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--main-color);
+    display: inline-block;
     
 }
-*/
+
+/*//////////////////////////////////////////////////////////////////////*/
+/* css for profile image on home page*/
 .profileImg{
     flex: 1 1 40rem;
     padding: 4rem 15rem;
@@ -170,52 +207,106 @@ section{
     border-radius: 0.5rem;
     
 }
-
-/*
-.home .profileImg img{
-    width: 35%;
-    
+/*//////////////////////////////////////////////////////////////////////*/
+/*Css for About Me page*/
+.aboutIntro{
+    font-size: 5rem;
+    color: black;
+    padding: 2rem 0;
 }
-*/
 
-.home .homePageContent .Introduction{
-    font-size: 3rem;
-    color: #111;
+.aboutIntro span{
+    color: var(--main-color);
     align-items: center;
 }
 
-.home .homePageContent h1{
+.aboutMe .aboutMeMainDiv{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+
+.aboutMe .aboutMeClassDiv{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-top: 7rem;
+}
+
+/*Css for About me page image*/
+.aboutMeClassDiv .aboutMeImg{
+    flex: 1 1 25rem;
+}
+
+.aboutMeClassDiv .aboutMeImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.aboutMe .aboutMeClassDiv .aboutMeContent{
+    flex: 1 1 55rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+
+}
+
+.aboutMeContent h3{
     font-size: 3rem;
-    color: #111;
-    text-transform: none;
-}
-
-.home .homePageContent h1 span{
-    color: var(--main-color);
-    text-transform: uppercase;
-}
-
-.home .homePageContent .currentInfo{
-    font-size: 1.8rem;
-    color: #111;
-    padding: 0.5rem 0;
-    text-transform: none;
-}
-
-.home .homePageContent .selfIntroText{
-    font-size: 1.8rem;
-    color: #111;
-    padding: 0.5rem 0;
-    text-transform: none;
-}
-
-.home .btn{
-    font-size: 3rem;
-    padding: 2rem 0rem;
+    color: black;
     
 }
 
+.personalInfoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
 
+.personalInfoContainer .personalInfoBox{
+    flex: 1 1 20rem;
+    height: 50%;
+    width: 50%;
+}
+
+.personalInfoContainer .personalInfoBox2{
+    flex: 1 1 20rem;
+    height: 50%;
+    width: 50%;
+    top: 0;
+}
+
+.personalInfoContainer .personalInfoBox span{
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.personalInfoContainer .personalInfoBox2 span{
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.personalInfoContainer .personalInfoBox p{
+    text-align: left;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+
+}
+
+.personalInfoContainer .personalInfoBox2 p{
+    text-align: left;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    top: 0;
+}
+/*//////////////////////////////////////////////////////////////////////*/
 /* Media Queries (to make project/page responsive)*/
 @media (max-width: 991px){
     html{
