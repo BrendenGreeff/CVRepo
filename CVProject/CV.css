@@ -213,6 +213,7 @@ section{
     font-size: 5rem;
     color: black;
     padding: 2rem 0;
+    
 }
 
 .aboutIntro span{
@@ -235,7 +236,7 @@ section{
     flex-wrap: wrap;
     gap: 1.5rem;
     padding: 2rem;
-    margin-top: 7rem;
+    margin-top: 5rem;
 }
 
 /*Css for About me page image*/
@@ -274,6 +275,7 @@ section{
     flex: 1 1 20rem;
     height: 50%;
     width: 50%;
+    text-transform: none;
 }
 
 .personalInfoContainer .personalInfoBox2{
@@ -281,6 +283,7 @@ section{
     height: 50%;
     width: 50%;
     top: 0;
+    text-transform: none;
 }
 
 .personalInfoContainer .personalInfoBox span{
@@ -306,6 +309,204 @@ section{
     font-size: 2rem;
     top: 0;
 }
+/*//////////////////////////////////////////////////////////////////////*/
+/*Css done for skills page*/
+
+.skillsMainDiv{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.skillsMainDiv .skillsIntro{
+    font-size: 5rem;
+    color: black;
+    padding: 2rem 0rem;
+}
+
+.skillsMainDiv .skillsIntro span{
+    color: var(--main-color);
+    align-items: center;
+}
+
+.skillsMainDiv .skillsSectionDiv .skillsContent{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-top: 0rem;
+}
+
+.skillsMainDiv .skillsSectionDiv  .skillsContent .actualSkills{
+    flex: 1 1 40rem;
+}
+
+.skillsMainDiv .skillsSectionDiv  .skillsContent .actualSkills .skillsProgress{
+    padding: 0.5rem 0;
+    margin-right: 13rem; /*To change space of image*/
+}
+
+.skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress h5{
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    color: black;
+
+}
+
+.skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress h5 span{
+    
+    font-size: 1.8rem;
+    display: flex;
+    margin-left: 40rem; /*To change bar length*/
+    color: black;
+
+}
+
+/*Css done for prohress bars*/
+.skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress .skillsBar{
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+    height: 1rem;
+    border-radius: 50rem;
+}
+
+.skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress .skillsBar span{
+    display: block;
+    height: 100%;
+    background: var(--main-color);
+}
+
+/*Css for progress bar fill*/
+.skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress:nth-child(1) .skillsBar span{
+    width: 80%;
+}
+.skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress:nth-child(2) .skillsBar span{
+    width: 40%;
+}
+.skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress:nth-child(3) .skillsBar span{
+    width: 70%;
+}
+.skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress:nth-child(4) .skillsBar span{
+    width: 85%;
+}
+.skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress:nth-child(5) .skillsBar span{
+    width: 65%;
+}
+.skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress:nth-child(6) .skillsBar span{
+    width: 75%;
+}
+.skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress:nth-child(7) .skillsBar span{
+    width: 50%;
+}
+.skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress:nth-child(8) .skillsBar span{
+    width: 65%;
+}
+
+/*Css for skills page/section image*/
+.skillsMainDiv .skillsSectionDiv  .skillsContent .skillsImg{
+    flex: 1 1 20rem;
+    
+}
+.skillsMainDiv .skillsSectionDiv  .skillsContent  .skillsImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+/*//////////////////////////////////////////////////////////////////////*/
+/*Css section for work experience*/
+
+.experienceMainDiv{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.experienceMainDiv .experienceSectionDiv{
+    flex:1 1 40rem;
+}
+
+.experienceMainDiv .experienceIntro{
+    font-size: 5rem;
+    color: black;
+    padding: 2rem 0rem;
+}
+
+.experienceMainDiv .experienceIntro span{
+    color: var(--main-color);
+    align-items: center;
+}
+
+.experienceMainDiv .experienceSectionDiv .experiencecontent{
+    display: block; /**/
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0rem;
+}
+
+.experienceMainDiv .experienceSectionDiv .experiencecontent .experienceBoxContainer{
+    flex: 1 1 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 3rem;
+    
+}
+
+.experienceMainDiv .experienceSectionDiv .experiencecontent .experienceBoxContainer .experienceBox{
+    flex: 1 1 15rem;
+    display: block; 
+    background: #fff;
+    padding: 2rem 8rem;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+}
+
+.experienceMainDiv .experienceSectionDiv .experiencecontent .experienceBoxContainer .experienceBox .section{
+    color: var(--main-color);
+    font-size: 2rem;
+    display: block; 
+    margin-top: 1rem;
+}
+
+.experienceMainDiv .experienceSectionDiv .experiencecontent .experienceBoxContainer .experienceBox h7 span{
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 1rem;
+}
+
+.experienceMainDiv .experienceSectionDiv .experiencecontent .experienceBoxContainer .experienceBox p{
+    font-size: 1.8rem;
+    color: black;
+    margin-top: 1rem;
+}
+
+.experienceSectionDiv .experienceImg{
+    flex: 1 1 20rem;
+}
+
+.experienceSectionDiv .experienceImg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    height: 300px;
+    
+}
+
 /*//////////////////////////////////////////////////////////////////////*/
 /* Media Queries (to make project/page responsive)*/
 @media (max-width: 991px){
