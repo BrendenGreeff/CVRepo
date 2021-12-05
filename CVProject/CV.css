@@ -450,14 +450,13 @@ section{
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding: 0rem;
 }
 
 .experienceMainDiv .experienceSectionDiv .experiencecontent .experienceBoxContainer{
     flex: 1 1 40rem;
     display: flex;
     flex-wrap: wrap;
-    
+    text-align: center;
     gap: 3rem;
     
 }
@@ -506,6 +505,90 @@ section{
     height: 300px;
     
 }
+/*//////////////////////////////////////////////////////////////////////*/
+/*Css for Contact Details section page*/
+
+.contactDetailsSection .contactDetailsIntro{
+    font-size: 5rem;
+    color: black;
+    padding: 2rem 0rem;
+    font-weight: bold;
+}
+
+.contactDetailsSection .contactDetailsIntro span{
+    color: var(--main-color);
+    text-align: center;
+}
+
+.contactDetailsSection .contactDetailsInputDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contactDetailsSection .contactDetailsInputDiv form{
+    flex: 1 1 55rem;
+    background: white;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    padding: 0rem 2rem;
+    width: 100%;
+}
+
+.contactDetailsSection .contactDetailsInputDiv .contactDetailsMap{
+    flex: 1 1 25rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    border: 1rem solid white;
+    margin-left: 1rem;
+}
+
+.contactDetailsSection .contactDetailsIconContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.contactDetailsSection .contactDetailsIconContainer .contactDetailsIcons{
+    flex: 1 1 25rem;
+    text-align: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+}
+
+.contactDetailsSection .contactDetailsIconContainer .contactDetailsIcons i{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+
+.contactDetailsSection .contactDetailsIconContainer .contactDetailsIcons h9{
+    font-size: 1.8rem;
+    color: black;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.contactDetailsSection .contactDetailsIconContainer .contactDetailsIcons p{
+    font-size: 1.5rem;
+    color: black;
+    margin-top: 1rem;
+    text-transform: none;
+}
+
+
+
 
 /*//////////////////////////////////////////////////////////////////////*/
 /* Media Queries (to make project/page responsive)*/
