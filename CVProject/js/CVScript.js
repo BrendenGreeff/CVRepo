@@ -14,6 +14,7 @@ window.onscroll = () =>{
 let cursor1 = document.querySelector('.cursor-1');
 let cursor2 = document.querySelector('.cursor-2');
 
+/*tis is the code that allows the custom curser to follow along where ever you drag the mouse and their actions if a button is pressed*/
 window.onmousemove = (h) => {
     cursor1.style.top = h.pageY + "px";
     cursor1.style.left = h.pageX + "px";

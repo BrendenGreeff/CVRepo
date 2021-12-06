@@ -29,6 +29,8 @@ body{
 }
 /*//////////////////////////////////////////////////////////////////////*/
 /* Css done for header (Nav bar) */
+
+/* Css done for that applies to whole navigation bar menu*/
 header{
     position: fixed;
     top: 0;
@@ -45,6 +47,7 @@ header{
     text-align: center;
 }
 
+/* Css done for the title in nav bar, thus my name */
 header .portfolio{
     text-transform: uppercase;
     color: white;
@@ -57,6 +60,7 @@ header .portfolio span{
     color:var(--main-color);
 }
 
+/* Css done for the options anchor elements in nav bar such as the home, about,experience button options*/
 header .navbar a{
     display: block;
     font-size: 2rem;
@@ -69,6 +73,7 @@ header .navbar a:hover{
     color:var(--main-color);
 }
 
+/* Css done for facebook, instagram, linkedin icon buttons/options/anchor elements*/
 header .sites a{
     font-size: 2.5rem;
     color: white;
@@ -80,6 +85,7 @@ header .sites a:hover{
     color:var(--main-color);
 }
 
+/* Css done for menu button that pops up if screen is size is at 50%*/
 #NavBarMenu{
     position: fixed;
     top: 1rem;
@@ -154,6 +160,7 @@ section{
     margin-top: 3rem;
 }
 
+/* Css done for home section heading or into (good day)*/
 .home .homePageContent .Introduction{
     font-size: 3rem;
     color: black;
@@ -161,6 +168,7 @@ section{
     font-weight: bold;
 }
 
+/* Css done for home section heading (my name is brenden greeff)*/
 .home .homePageContent h1{
     font-size: 3rem;
     color: black;
@@ -172,6 +180,7 @@ section{
     text-transform: uppercase;
 }
 
+/* Css done for home section paragrage explaining a bit about myself*/
 .home .homePageContent .currentInfo{
     font-size: 1.8rem;
     color: black;
@@ -196,8 +205,11 @@ section{
     width: 30%;
     object-fit: cover;
     border-radius: 0.5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    border: 1rem solid white;
 }
 
+/*Css for home section buttons (about me and download cv)*/
 .home .btn{
     font-size: 1.8rem;
     margin-top: 1rem;
@@ -209,9 +221,10 @@ section{
     margin-bottom: 3rem;
     
 }
-
 /*//////////////////////////////////////////////////////////////////////*/
 /*Css for About Me page*/
+
+/*Css for About Me section heading (About me)*/
 .aboutIntro{
     font-size: 5rem;
     color: black;
@@ -223,6 +236,7 @@ section{
     color: var(--main-color);
     align-items: center;
 }
+
 
 .aboutMe .aboutMeMainDiv{
     display: flex;
@@ -241,7 +255,7 @@ section{
     margin-top: 5rem;
 }
 
-/*Css for About me page image*/
+/*Css for About me section image*/
 .aboutMeClassDiv .aboutMeImg{
     flex: 1 1 25rem;
 }
@@ -251,20 +265,25 @@ section{
     width: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    border: 1rem solid white;
 }
 
+/*Css for About Me page div that contains my personal info*/
 .aboutMe .aboutMeClassDiv .aboutMeContent{
     flex: 1 1 55rem;
     margin-top: 3rem;
     margin-left: 4rem;
 }
 
+/*Css for About Me page heading (my personal info is as follows)*/
 .aboutMeContent h3{
     font-size: 3rem;
     color: black;
     
 }
 
+/*Css for About Me section that actually contains my personal info (name, surname, ID, etc.)*/
 .personalInfoContainer{
     display: flex;
     flex-wrap: wrap;
@@ -321,6 +340,7 @@ section{
     padding: 2rem;
 }
 
+/*Css done for skills section heading (My Skills)*/
 .skillsMainDiv .skillsIntro{
     font-size: 5rem;
     color: black;
@@ -332,6 +352,7 @@ section{
     align-items: center;
 }
 
+/*Css done for skills section div that contains the info i want to display such as natepadd ++ and progress bar*/
 .skillsMainDiv .skillsSectionDiv .skillsContent{
     display: flex;
     align-items: center;
@@ -341,10 +362,12 @@ section{
     
 }
 
+/*Css done for skills section content/info such as notepadd++ and the percentage 70%*/
 .skillsMainDiv .skillsSectionDiv  .skillsContent .actualSkills{
     flex: 1 1 40rem;
 }
 
+/*Css done for skills section name of skill such as notepad++*/
 .skillsMainDiv .skillsSectionDiv  .skillsContent .actualSkills .skillsProgress{
     padding: 0.5rem 0;
     margin-right: 13rem; /*To change space of image*/
@@ -356,7 +379,7 @@ section{
     justify-content: space-between;
     padding: 2rem 0;
     color: black;
-
+    
 }
 
 .skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress h5 span{
@@ -419,11 +442,14 @@ section{
     width: 100%;
     object-fit: cover;
     border-radius: 1rem;
-
+    border-radius: 0.5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    border: 1rem solid cornsilk;
 }
 /*//////////////////////////////////////////////////////////////////////*/
 /*Css section for work experience*/
 
+/*Css section for work experience that applies to the whole section*/
 .experienceMainDiv{
     display: flex;
     align-items: center;
@@ -436,6 +462,7 @@ section{
     flex:1 1 40rem;
 }
 
+/*Css section for work experience heading (My Work Experience)*/
 .experienceMainDiv .experienceIntro{
     font-size: 5rem;
     color: black;
@@ -447,8 +474,9 @@ section{
     align-items: center;
 }
 
+/*Css section for work experience div that contains the containers and their info*/
 .experienceMainDiv .experienceSectionDiv .experiencecontent{
-    display: block; /**/
+    display: block; 
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -464,6 +492,7 @@ section{
     gap: 3rem;
 }
 
+/*Css  for work experience section to create and style the containers */
 .experienceMainDiv .experienceSectionDiv .experiencecontent .experienceBoxContainer .experienceBox{
     flex: 1 1 25rem;
     display: block; 
@@ -476,6 +505,7 @@ section{
     align-items: center;
 }
 
+/*Css for info in work experience section container */
 .experienceMainDiv .experienceSectionDiv .experiencecontent .experienceBoxContainer .experienceBox .section{
     color: var(--main-color);
     font-size: 2rem;
@@ -495,6 +525,7 @@ section{
     margin-top: 1rem;
 }
 
+/*Css for work experience section image*/
 .experienceSectionDiv .experienceImg{
     flex: 1 1 20rem;
     margin-top: 2rem;
@@ -506,11 +537,14 @@ section{
     object-fit: cover;
     border-radius: 1rem;
     height: 300px;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    border: 1rem solid white;
     
 }
 /*//////////////////////////////////////////////////////////////////////*/
 /*Css for Contact Details section page*/
 
+/*Css for Contact Details section heading (Contact Me)*/
 .contactDetailsSection .contactDetailsIntro{
     font-size: 5rem;
     color: black;
@@ -539,24 +573,15 @@ section{
     margin-left: 1rem;
     height: 200px;
 }
-/*
-.contactDetailsSection .contactDetailsInputDiv form{
-    flex: 1 1 60rem;
-    background: white;
-    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.3);
-    border-radius: 0.5rem;
-    padding: 0rem 2rem;
-    width: 100%;
-    text-align: center;
-    height: 300px;
-}*/
 
-/* Css for box where you can type and send message*/
+/* Css for contact container/box where you can type and send message*/
 .contactDetailsSection .contactDetailsInputBoxDiv{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
+
+/*Css for Contact Details section details contained in contact box/container*/
 .contactDetailsSection .contactDetailsInputBoxDiv form{
     flex: 1 1 25rem;
     background: white;
@@ -569,6 +594,7 @@ section{
     height: 50%;
 }
 
+/*Css for contact box container lines and spacing*/
 .contactDetailsSection .contactDetailsInputBoxDiv form .contactDetailsInputBox,
 .contactDetailsSection .contactDetailsInputBoxDiv form .textarea{
     width: 100%;
@@ -580,6 +606,7 @@ section{
     margin: 1rem 0;
 }
 
+/*Css for button in contact container*/
 .contactDetailsSection .contactDetailsInputBoxDiv form .btn{
     font-size: 1.8rem;
     margin-top: 1rem;
@@ -591,48 +618,6 @@ section{
     margin-bottom: 1rem;
     
 }
-/*Css for input container*/ 
-/*
-.contactDetailsSection .contactDetailsInputDiv form .contactDetailsInputBox,
-.contactDetailsSection .contactDetailsInputDiv form .textarea{
-    width: 100%;
-    border-bottom: 0.5rem solid var(--main-color);
-    color: black;
-    text-transform: none;
-    font-size: 1.8rem;
-    padding: 1rem 0;
-    margin: 1rem 0;
-}
-.contactDetailsSection .contactDetailsInputBoxDiv form .contactDetailsInputBox,
-.contactDetailsSection .contactDetailsInputBoxDiv form .textarea{
-    width: 100%;
-    border-bottom: 0.5rem solid var(--main-color);
-    color: black;
-    text-transform: none;
-    font-size: 1.8rem;
-    padding: 1rem 0;
-    margin: 1rem 0;
-}*/
-
-/*hovering effeect part that turns lines green on message container in contact details section
-
-.contactDetailsSection .contactDetailsInputDiv form .contactDetailsInputBox:focus,
-.contactDetailsSection .contactDetailsInputDiv form .textarea:focus{
-    border-color: var(--main-color);
-}
-*/
-/*
-.contactDetailsSection .contactDetailsInputDiv form .contactDetailsInputBox:placeholder,
-.contactDetailsSection .contactDetailsInputDiv form .textarea:placeholder{
-    text-transform: capitalize;
-}
-
-
-.contactDetailsSection .contactDetailsInputDiv form .textarea{
-    height: 20rem;
-}*/
-
-
 
 /*Css for 3 containers with phone, mail, and pinlocation icon*/
 .contactDetailsSection .contactDetailsIconContainer{
@@ -678,21 +663,6 @@ section{
     margin-top: 1rem;
     text-transform: none;
 }
-
-/*Css for contact details button
-.contactDetailsSection .contactDetailsInputDiv form .btn{
-    font-size: 1.8rem;
-    margin-top: 1rem;
-    padding: 1rem 3rem;
-    background: var(--main-color);
-    display: inline-block;
-    width: 20rem;
-    color: black;
-    margin-bottom: 2rem;
-    
-}*/
-
-
 
 /*//////////////////////////////////////////////////////////////////////*/
 /* Media Queries (to make project/page responsive)*/
