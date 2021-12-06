@@ -47,7 +47,7 @@ header{
 
 header .portfolio{
     text-transform: uppercase;
-    color: #fff;
+    color: white;
     font-size: 3rem;
     font-weight: bolder;
 }
@@ -60,7 +60,7 @@ header .portfolio span{
 header .navbar a{
     display: block;
     font-size: 2rem;
-    color: #fff;
+    color: white;
     margin: 2rem 0;
 }
 
@@ -71,7 +71,7 @@ header .navbar a:hover{
 
 header .sites a{
     font-size: 2.5rem;
-    color: #fff;
+    color: white;
     margin: 0.7rem;
 
 }
@@ -86,7 +86,7 @@ header .sites a:hover{
     right: 1rem;
     z-index: 10000;
     background: var(--main-color);
-    color: #fff;
+    color: white;
     border-radius: 0.5rem;
     padding: 1rem 1.5rem;
     font-size: 3rem;
@@ -142,20 +142,23 @@ section{
 }
 
 .home{
-    display: flex;
+    display: block; /*changed to check*/
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
+    text-align: center;
 }
 
 .home .homePageContent{
     flex:1 1 40rem;
+    margin-top: 3rem;
 }
 
 .home .homePageContent .Introduction{
     font-size: 3rem;
     color: black;
     align-items: center;
+    font-weight: bold;
 }
 
 .home .homePageContent h1{
@@ -183,30 +186,30 @@ section{
     text-transform: none;
 }
 
+/*Css for home section/page image*/
+.home .profileImg{
+    flex: 1 1 25rem;
+}
+
+.home .profileImg img{
+    height: 10%;
+    width: 30%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
 .home .btn{
     font-size: 1.8rem;
     margin-top: 1rem;
     padding: 1rem 3rem;
     background: var(--main-color);
     display: inline-block;
+    width: 20rem;
+    color: black;
+    margin-bottom: 3rem;
     
 }
 
-/*//////////////////////////////////////////////////////////////////////*/
-/* css for profile image on home page*/
-.profileImg{
-    flex: 1 1 40rem;
-    padding: 4rem 15rem;
-    
-}
-
-.profileImg img{
-    width: 100%;
-    height: 100%;
-    size: 70px;
-    border-radius: 0.5rem;
-    
-}
 /*//////////////////////////////////////////////////////////////////////*/
 /*Css for About Me page*/
 .aboutIntro{
@@ -228,7 +231,6 @@ section{
     gap: 1.5rem;
     padding: 2rem;
 }
-
 
 .aboutMe .aboutMeClassDiv{
     display: flex;
@@ -253,9 +255,8 @@ section{
 
 .aboutMe .aboutMeClassDiv .aboutMeContent{
     flex: 1 1 55rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     margin-left: 4rem;
-
 }
 
 .aboutMeContent h3{
@@ -309,9 +310,9 @@ section{
     font-size: 2rem;
     top: 0;
 }
+
 /*//////////////////////////////////////////////////////////////////////*/
 /*Css done for skills page*/
-
 .skillsMainDiv{
     display: flex;
     align-items: center;
@@ -336,8 +337,8 @@ section{
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding: 1rem;
-    margin-top: 0rem;
+    padding: 0rem;
+    
 }
 
 .skillsMainDiv .skillsSectionDiv  .skillsContent .actualSkills{
@@ -367,7 +368,7 @@ section{
 
 }
 
-/*Css done for prohress bars*/
+/*Css done for progress bars*/
 .skillsMainDiv .skillsSectionDiv  .skillsContent .skillsProgress .skillsBar{
     width: 100%;
     background: #ccc;
@@ -411,13 +412,14 @@ section{
 /*Css for skills page/section image*/
 .skillsMainDiv .skillsSectionDiv  .skillsContent .skillsImg{
     flex: 1 1 20rem;
-    
+    margin-right: 2rem;
 }
 .skillsMainDiv .skillsSectionDiv  .skillsContent  .skillsImg img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 1rem;
+
 }
 /*//////////////////////////////////////////////////////////////////////*/
 /*Css section for work experience*/
@@ -450,19 +452,20 @@ section{
     align-items: center;
     flex-wrap: wrap;
     gap: 1.5rem;
+    size: 40px;
+    height: fit-content;
 }
 
 .experienceMainDiv .experienceSectionDiv .experiencecontent .experienceBoxContainer{
-    flex: 1 1 40rem;
+    flex: 1 1 25rem;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     gap: 3rem;
-    
 }
 
 .experienceMainDiv .experienceSectionDiv .experiencecontent .experienceBoxContainer .experienceBox{
-    flex: 1 1 15rem;
+    flex: 1 1 25rem;
     display: block; 
     background: #fff;
     padding: 2rem 8rem;
@@ -471,7 +474,6 @@ section{
     margin-top: 5rem;
     flex-wrap: wrap;
     align-items: center;
-    height: auto;
 }
 
 .experienceMainDiv .experienceSectionDiv .experiencecontent .experienceBoxContainer .experienceBox .section{
@@ -495,6 +497,7 @@ section{
 
 .experienceSectionDiv .experienceImg{
     flex: 1 1 20rem;
+    margin-top: 2rem;
 }
 
 .experienceSectionDiv .experienceImg img{
@@ -520,19 +523,11 @@ section{
     text-align: center;
 }
 
+/*Css for map container*/
 .contactDetailsSection .contactDetailsInputDiv{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-}
-
-.contactDetailsSection .contactDetailsInputDiv form{
-    flex: 1 1 55rem;
-    background: white;
-    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.3);
-    border-radius: 0.5rem;
-    padding: 0rem 2rem;
-    width: 100%;
 }
 
 .contactDetailsSection .contactDetailsInputDiv .contactDetailsMap{
@@ -542,13 +537,109 @@ section{
     box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.3);
     border: 1rem solid white;
     margin-left: 1rem;
+    height: 200px;
+}
+/*
+.contactDetailsSection .contactDetailsInputDiv form{
+    flex: 1 1 60rem;
+    background: white;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    padding: 0rem 2rem;
+    width: 100%;
+    text-align: center;
+    height: 300px;
+}*/
+
+/* Css for box where you can type and send message*/
+.contactDetailsSection .contactDetailsInputBoxDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.contactDetailsSection .contactDetailsInputBoxDiv form{
+    flex: 1 1 25rem;
+    background: white;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    border-radius: 0.5rem;
+    padding: 0rem 2rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    height: 50%;
 }
 
+.contactDetailsSection .contactDetailsInputBoxDiv form .contactDetailsInputBox,
+.contactDetailsSection .contactDetailsInputBoxDiv form .textarea{
+    width: 100%;
+    border-bottom: 0.5rem solid var(--main-color);
+    color: black;
+    text-transform: none;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+
+.contactDetailsSection .contactDetailsInputBoxDiv form .btn{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--main-color);
+    display: inline-block;
+    width: 20rem;
+    color: black;
+    margin-bottom: 1rem;
+    
+}
+/*Css for input container*/ 
+/*
+.contactDetailsSection .contactDetailsInputDiv form .contactDetailsInputBox,
+.contactDetailsSection .contactDetailsInputDiv form .textarea{
+    width: 100%;
+    border-bottom: 0.5rem solid var(--main-color);
+    color: black;
+    text-transform: none;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+.contactDetailsSection .contactDetailsInputBoxDiv form .contactDetailsInputBox,
+.contactDetailsSection .contactDetailsInputBoxDiv form .textarea{
+    width: 100%;
+    border-bottom: 0.5rem solid var(--main-color);
+    color: black;
+    text-transform: none;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}*/
+
+/*hovering effeect part that turns lines green on message container in contact details section
+
+.contactDetailsSection .contactDetailsInputDiv form .contactDetailsInputBox:focus,
+.contactDetailsSection .contactDetailsInputDiv form .textarea:focus{
+    border-color: var(--main-color);
+}
+*/
+/*
+.contactDetailsSection .contactDetailsInputDiv form .contactDetailsInputBox:placeholder,
+.contactDetailsSection .contactDetailsInputDiv form .textarea:placeholder{
+    text-transform: capitalize;
+}
+
+
+.contactDetailsSection .contactDetailsInputDiv form .textarea{
+    height: 20rem;
+}*/
+
+
+
+/*Css for 3 containers with phone, mail, and pinlocation icon*/
 .contactDetailsSection .contactDetailsIconContainer{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .contactDetailsSection .contactDetailsIconContainer .contactDetailsIcons{
@@ -573,6 +664,7 @@ section{
 }
 
 
+
 .contactDetailsSection .contactDetailsIconContainer .contactDetailsIcons h9{
     font-size: 1.8rem;
     color: black;
@@ -587,6 +679,18 @@ section{
     text-transform: none;
 }
 
+/*Css for contact details button
+.contactDetailsSection .contactDetailsInputDiv form .btn{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--main-color);
+    display: inline-block;
+    width: 20rem;
+    color: black;
+    margin-bottom: 2rem;
+    
+}*/
 
 
 
